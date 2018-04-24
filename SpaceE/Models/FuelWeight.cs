@@ -9,19 +9,23 @@ namespace SpaceE.Models
     {
         public int Weight { get; set; }
         public int Distance { get; set; }
+        public string LocationName { get; set; }
+        public int Fuel { get; set; }
 
-        public FuelWeight(int weight, int distance)
+        public FuelWeight(int weight, int distance, string location)
         {
             Weight = weight;
             Distance = distance;
+            LocationName = location;
         }
 
-        public int CalcWeight()
+
+        public void CalcWeight()
         {
             double power = Distance / 3000D;
             double total = Math.Round(Weight * Math.Pow(2.718, power)) - Weight;
-            int intTotal = (int)total;
-            return intTotal;
+            Fuel = (int)total;
         }
+
     }
 }
