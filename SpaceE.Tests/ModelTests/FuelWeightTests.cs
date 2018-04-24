@@ -23,6 +23,19 @@ namespace SpaceE.Tests
         }
 
         [TestMethod]
+        public void Set_ReturnVoid_Void()
+        {
+            //Arrange
+            var newFuel = new FuelWeight(1000, 1400);
+
+            //Act
+            newFuel.Weight = 2000;
+
+            //Assert
+            Assert.AreEqual(2000, newFuel.Weight);
+        }
+
+        [TestMethod]
         public void GetTotalFuel_ReturnsFuelWeight_Int()
         {
             //Arrange
