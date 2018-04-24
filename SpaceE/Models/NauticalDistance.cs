@@ -7,14 +7,14 @@ namespace SpaceE.Models
 {
     public class NauticalDistance
     {
-        double latDeg;
-        double latMin;
-        string latDir;
-        double lonDeg;
-        double lonMin;
-        string lonDir;
+        public double latDeg;
+        public double latMin;
+        public string latDir;
+        public double lonDeg;
+        public double lonMin;
+        public string lonDir;
 
-        double FindDist()
+        public double FindDist()
         {
             double difLatMin;
             double difLonMin;
