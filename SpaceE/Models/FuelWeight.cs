@@ -7,10 +7,20 @@ namespace SpaceE.Models
 {
     public class FuelWeight
     {
-        public int CalcWeight(int weight, int distance)
+        public int Weight { get; set; }
+        public int Distance { get; set; }
+
+        public FuelWeight(int weight, int distance)
         {
-            double power = distance / 3000D;
-            double total = Math.Round(weight * Math.Pow(2.718, power)) - weight;
+            Weight = weight;
+            Distance = distance;
+        }
+
+
+        public int CalcWeight()
+        {
+            double power = Distance / 3000D;
+            double total = Math.Round(Weight * Math.Pow(2.718, power)) - Weight;
             int intTotal = (int)total;
             return intTotal;
         }
