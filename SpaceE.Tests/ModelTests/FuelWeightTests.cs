@@ -11,7 +11,7 @@ namespace SpaceE.Tests
         public void GetWeight_ReturnWeight_Int()
         {
             //Arrange
-            var newFuel = new FuelWeight(1000, 1400);
+            var newFuel = new FuelWeight(1000, 1400, "Los Angeles");
 
             //Act
             var weightResult = newFuel.Weight;
@@ -26,7 +26,7 @@ namespace SpaceE.Tests
         public void Set_ReturnVoid_Void()
         {
             //Arrange
-            var newFuel = new FuelWeight(1000, 1400);
+            var newFuel = new FuelWeight(1000, 1400, "Los Angeles");
 
             //Act
             newFuel.Weight = 2000;
@@ -39,28 +39,26 @@ namespace SpaceE.Tests
         public void GetTotalFuel_ReturnsFuelWeight_Int()
         {
             //Arrange
-            var weight = new FuelWeight(1000, 1400);
+            var weight = new FuelWeight(1000, 1400, "Los Angeles");
 
             //Act
-            var result = Math.Round((double) weight.CalcWeight());
-            int intResult = (int)result;
+            weight.CalcWeight();
 
             //Assert
-            Assert.AreEqual(595, intResult);
+            Assert.AreEqual(595, weight.Fuel);
         }
         
         [TestMethod]
         public void GetTotalFuel_ReturnsFuelWeight2_Int()
         {
             //Arrange
-            var weight = new FuelWeight(2000, 9400);
+            var weight = new FuelWeight(2000, 9400, "International Space Station");
 
             //Act
-            var result = Math.Round((double)weight.CalcWeight());
-            int intResult = (int)result;
+            weight.CalcWeight();
 
             //Assert
-            Assert.AreEqual(43886, intResult);
+            Assert.AreEqual(43886, weight.Fuel);
         }
     }
 }

@@ -1,3 +1,19 @@
-﻿@{
+﻿@model IEnumerable<SpaceE.Models.FuelWeight>
+
+@{
 }
-View VIew View
+
+<form action="@Url.Action("Results", "FuelWeight")" method="post">
+    <label>Rocket Weight</label>
+    <input id="Weight" name="Weight" />
+    <button type="submit" class="btn btn-default">Results</button>
+</form>
+
+
+@foreach (var listWeight in Model)
+{
+    <p>To travel to @Html.DisplayFor(modelWeight => listWeight.LocationName), you'll need @Html.DisplayFor(modelWeight => listWeight.Fuel) kg of fuel.</p>
+
+}
+
+
