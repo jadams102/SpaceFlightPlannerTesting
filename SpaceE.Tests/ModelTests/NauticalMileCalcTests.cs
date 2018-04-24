@@ -39,5 +39,20 @@ namespace SpaceE.Tests
 
             Assert.AreEqual(3, result);
         }
+        [TestMethod]
+        public void NauticalTestMethod3()
+        {
+            var nautDist = new NauticalDistance();
+            nautDist.latDeg = 45;
+            nautDist.latMin = 29;
+            nautDist.latDir = "N";
+            nautDist.lonDeg = 120;
+            nautDist.lonMin = 29;
+            nautDist.lonDir = "W";
+
+            var result = nautDist.FindDist();
+
+            Assert.AreEqual(2144, result);
+        }
     }
 }

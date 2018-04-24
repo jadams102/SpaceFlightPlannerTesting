@@ -16,7 +16,6 @@ namespace SpaceE.Models
             Distance = distance;
         }
 
-
         public int CalcWeight()
         {
             double power = Distance / 3000D;
@@ -24,6 +23,5 @@ namespace SpaceE.Models
             int intTotal = (int)total;
             return intTotal;
         }
-
     }
 }
