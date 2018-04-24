@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceE", "SpaceE\SpaceE.csproj", "{E9EB9D09-15F0-45FC-87B4-A7B4FAFD00C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceE.Tests", "SpaceE.Tests\SpaceE.Tests.csproj", "{D725E0F6-677F-4799-81E0-4B2CA0361D3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E9EB9D09-15F0-45FC-87B4-A7B4FAFD00C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9EB9D09-15F0-45FC-87B4-A7B4FAFD00C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9EB9D09-15F0-45FC-87B4-A7B4FAFD00C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D725E0F6-677F-4799-81E0-4B2CA0361D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D725E0F6-677F-4799-81E0-4B2CA0361D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D725E0F6-677F-4799-81E0-4B2CA0361D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D725E0F6-677F-4799-81E0-4B2CA0361D3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
