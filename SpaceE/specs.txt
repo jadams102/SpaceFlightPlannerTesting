@@ -1,0 +1,10 @@
+(dry weight of the rocket * 2.718^( desired final speed / speed of rocket exhaust)) - dry weight of the rocket
+
+ * Program should calculate the weight of fuel needed for a particular mission
+	* Input: 2 ton (2000kg) rocket to the International Space Station (final speed of 9.4 km/s)
+	* Output: 40,958 kg of fuel required
+
+
+Equation:
+double power = dest/exhaustD
+double total = (weight * Math.Pow(2.718, power)) - weight
