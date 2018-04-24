@@ -13,11 +13,12 @@ namespace SpaceE.Models
         {
             var workTime = Math.Ceiling(this.Tasks / 4);
             decimal adjHours;
+
             if (this.Hours > 24)
             {
-                adjHours = Math.Ceiling(this.Hours / 24) * 16;
+                adjHours = Math.Ceiling((this.Hours / 24) * 16);
             }
-            else if (this.Hours > 16 && this.Hours < 24)
+            else if (this.Hours > 16 && this.Hours <= 24)
             {
                 adjHours = 16;
             }
